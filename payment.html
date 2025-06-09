@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🧾 Payment – SpiderStuffX</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+      animation: slideUp 0.6s ease-out;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background: #e50914;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #b20710;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🧾 Payment for Spider-Man Mask</h1>
+    <p>Price: <strong>₹1999</strong></p>
+    <div class="gallery">
+      <img src="mask1.webp" alt="Mask Image 1">
+      <img src="mask2.webp" alt="Mask Image 2">
+      <img src="mask3.webp" alt="Mask Image 3">
+      <img src="mask4.webp" alt="Mask Image 4">
+    </div>
+    <p>Scan the QR code using any UPI app (GPay, PhonePe, etc.)</p>
+    <img src="upi-qr.jpeg" alt="UPI QR Code" class="qr" />
+    <p>or pay manually to UPI ID: <strong>aslinshiju4-1@oksbi</strong></p>
+
+    <h2>✅ After Payment</h2>
+    <a href="https://forms.gle/L1J2b7kVaJPhHRjX8" class="btn" target="_blank">📝 Submit Delivery Form</a>
+    <a href="https://www.instagram.com/spiderstuffx" class="btn" target="_blank">📩 DM us on Instagram</a>
+  </div>
+</body>
+</html>
